@@ -1,0 +1,58 @@
+--Shae Morlis
+--File: ASP.NET HW2
+--DATE: Feb 22, 2021
+
+1. What is the difference between Visual Studio and Visual Studio Code?
+Visual Studio is a suite of component-based software development tools and other technologies for building powerful, high-performance applications. 
+On the other hand, Visual Studio Code is detailed as "Build and debug modern web and cloud applications, by Microsoft". 
+Build and debug modern web and cloud applications.
+
+2. What is LocalDB?
+LocalDB is a developer oriented, on-demand managed instance of the SQL Server engine that can be turned on automatically when needed and turned off when not in use.
+
+3. What do these commands do?
+dotnet new globaljson --sdk-version 3.1.101 --output FirstProject
+dotnet new mvc --no-https --output FirstProject --framework netcoreapp3.1
+The first command creates a folder named FirstProject and adds to it a file named global.json, which specifies the version of .NET Core that the project will use; this ensures you get the expected results when following the examples. 
+The second command creates a new ASP.NET Core project. 
+The .NET Core SDK includes a range of templates for starting new projects, and the mvc template is one of the options available for ASP.NET Core applications.
+
+4. What command do you use to build an ASP.NET project from the command line? What command
+do you use to run the project?
+use msbuildprojectname.proj from the command line. You run with the dotnet run command. 
+
+5. What is the purpose of an endpoint? 
+The endpoint route resolution is the concept of looking at the incoming request and mapping the request to an endpoint using route mappings. 
+An endpoint represents the controller action that the incoming request resolves to, along with other metadata attached to the route that matches the request.
+
+6. What is a controller?
+A controller contains the flow control logic for an ASP.NET MVC application. 
+A controller determines what response to send back to a user when a user makes a browser request.
+A controller is just a class (for example, a Visual Basic or C# class)
+
+7. Where are actions defined?
+ASP.NET MVC Action Methods are responsible to execute requests and generate responses to it. 
+By default, it generates a response in the form of ActionResult. Actions typically have a one-to-one mapping with user interactions.
+
+8. What is the purpose of the routing system?
+The ASP.NET Routing module is responsible for mapping incoming browser requests to particular MVC controller actions. 
+By the end of this tutorial, you will understand how the standard route table maps requests to controller actions.
+
+9. Assume that your ASP.NET application runs in a browser with a URL like http://localhost:5000.
+List the three default routes configured by the ASP.NET Core routing system.
+http://yoursite/ or http://yoursite/Home
+
+10. What does the ViewResult object instruct ASP.NET Core to do?
+I am instructing ASP.NET Core to render a view. I create the ViewResult by calling the View method, 
+specifying the name of the view that I want to use, which is MyView.
+
+11. How does ASP.NET Core know what View is to be called from an action method?
+All the public methods in the Controller class are called Action methods. 
+ActionResult is a base class of all the result type which returns from Action method. 
+
+12. What is the job of an action method?
+ASP.NET MVC Action Methods are responsible to execute requests and generate responses to it. 
+By default, it generates a response in the form of ActionResult.
+
+13. What is a view model?
+ViewModels are used to shape multiple entities from one or more models into a single object.

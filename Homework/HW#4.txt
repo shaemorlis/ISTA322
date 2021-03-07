@@ -1,0 +1,59 @@
+#### Name: Shae Morlis
+#### File: ASPHW04
+#### Date: Mar 1, 2021
+
+#### Homework Questions
+
+1.  What are the .NET SDK command line tools used for?  Is their use required?  Why or why not?
+Creating, managing, building, installing, and running projects.
+Visual Studio - has tools to support 
+Visual Studio Code - Requires command line tools.
+
+
+2.  What  kind  of  applications  do  the  following  templates  create?   Run  these  commands  and  read  the documentation.  
+A brief summary of each template is sufficient.
+dotnet new console --help --> helpful commands you can use in ASP.NET
+dotnet new mvc --help --> helpful commands you can use for MVC. The types of authentication to use. 
+dotnet new web --help
+
+
+3.  What, specifically, do the following commands do?
+dotnet new globaljson --sdk-version 3.1.101 --output MySolution/MyProject- creates a template .json file. 
+dotnet new web --no-https --output MySolution/MyProject --framework netcoreapp3.1 - restored a .csproj file 
+dotnet new sln -o MySolution - creates a template solution file. 
+dotnet sln MySolution add MySolution/MyProject - added the solution to .csproj file. 
+
+
+4.  What is the purpose of the global.json file?
+Specifying the version of .NET Core that will be used.
+Adding the global.json file ensures the right version of the .NET Core SDK will be used by the project.
+
+
+5.  What does the method app.UseStaticFiles()do?
+adds support for responding to HTTP requests with static content in the wwwroot folder, such as the HTML file
+created in the previous section. 
+
+
+6.  What do the following two commands do? dotnet build dotnet run
+Dotnet build - builds the project
+Dotnet run - Runs the project
+The compiler will build the project and then start the integrated ASP.NET Core HTTP server to listen for HTTP requests on port
+5000.
+
+7.  (not in book) You can manage pacakges using the NuGet package manager and the command line tool dotnet add package.  
+What are packages and what are they used for.
+NuGet is the easiest way to improve and automate your development practices. 
+When you install a package via NuGet, it copies the library files to your solution and automatically updates your project.
+
+
+8.  What are tool packages and what are they used for?
+Tool packages install commands that can be used from the command line to perform operations on .NET Core projects.
+
+
+10.  What are client side packages and what are they used for?
+Client-side packages contain content that is delivered to the client, such as images, CSS stylesheets, JavaScript files, and static
+HTML.
+
+
+11.  List two ways that a developer can debug code.
+Using the Visual studio debugger or using command line tools to CW the error messages.
