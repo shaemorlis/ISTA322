@@ -1,0 +1,37 @@
+## Shae Morlis
+## ASP.NET HW#6
+
+1. What is unit testing as defined by the book?
+Unit testing is a form of testing in which individual components are isolated from the rest of the application so their behavior can be thoroughly validated.
+
+2. What is the convention for creating unit tests in ASP.NET Core applications?
+Use the dotnet new command with the project template for your preferred test framework
+
+3. Name three unit test project tools used for ASP.NET Core applications.
+MS Test Framework
+NUnit Framework
+XUnit Framework 
+
+4. What is the convention for naming unit tests in ASP.NET Core applications?
+The convention is to name the unit test project <ApplicationName>.Tests.
+
+5. What is the convention for naming the test classes in ASP.NET Core? What is the convention for naming the methods in the test classes?
+
+
+6. What is the purpose of the Fact attribute in Xunit? (not in book) What is the purpose of the Theory attribute in Xunit? The Fact attribute and the Asset class are defined in the Xunit namespace, for which there must be a using statement in every test class. The [Theory] attribute denotes a parameterised test that is true for a subset of data. 
+
+7. Describe the different elements of the AAA testing pattern.
+a unit test follows a pattern called arrange, act, assert (A/A/A). Arrange refers to setting up the conditions for the test, act refers to performing the test, and assert refers to verifying that the result was the one that was expected.
+
+8. Describe the use of the methods in the Assert class. Describe the purpose, parameters, and return
+value of the Assert.Equals() method.
+class called Assert, whose methods are used to check that the outcome of an action is the one that is expected.
+
+9. What is the key to isolating a component for testing?
+Create mock implementations of the objects that the component under test requires.
+
+10. What is a mocking package? What does it do?
+A mock version of something is an object that can act like the real thing but can be controlled in test code. I can use the Moq framework to create a fake IDataSource object without having to define a custom test class
+
+11. (not in book) What is the difference between the Setup() and the SetupGet() methods of Moq?
+Setup() can be used for mocking a method or a property. SetupGet() is specifically for mocking the getter of a property.
